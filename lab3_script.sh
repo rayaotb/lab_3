@@ -20,7 +20,7 @@ grep $regex $filename
 egrep -c "^[0-9]{3}-[0-9]{3}-[0-9]{4}$" $filename 
 
 #find all emails that have format L@A.xxx where L is a sequence of letters, numbers, or . or - and A is the same too. 
-egrep -c "^[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{3}" $filename
+egrep -c "^[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{3}$" $filename
 
 #find all numbers that start with 303
 egrep -o "^303-[0-9]{3}-[0-9]{4}$" $filename
